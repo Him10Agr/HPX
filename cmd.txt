@@ -1,0 +1,5 @@
+cmake -DWITH_MPI=ON -DWITH_HPX_SIMD=ON -DWITH_HPX_COROUTINE=ON ..
+cmake --build .
+
+cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=~/vcpkg/scripts/buildsystems/vcpkg.cmake
+cmake --build build
