@@ -21,7 +21,7 @@ if(${WITH_MPI})
     find_package(MPI REQUIRED COMPONENTS CXX )
 endif()
 if(${WITH_HPX})
-    find_package(HPX REQUIRED)
+    find_package(HPX CONFIG REQUIRED)
 endif()
 
 set(EXECUTABLE_OUTPUT_PATH "${PROJECT_BINARY_DIR}/bin")
